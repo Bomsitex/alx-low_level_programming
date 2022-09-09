@@ -5,11 +5,12 @@
 */
 int main(void)
 {
-char alpha = 'z';
-while (alpha >= 'a')
+int i = 122;
+while (i > 96)
 {
-putchar(alpha);
-alpha--;									}
-putchar('\n');
-return (0);
+putchar(i);
 }
+i--;
+putchar(10);
+return (0);
+
