@@ -3,7 +3,7 @@
 *main - Entry point, print 00 to 99 using putchar
 *Return: Always 0 (Success)
 */
-int(void)
+int main(void)
 {
 int i, e;
 i = 48;
