@@ -5,30 +5,26 @@
 */
 int main(void)
 {
-int one;
-int ten;
-int hundred;
-for (hundred = '0'; hundred <= '9'; hundred++) /*hundreds place*/
+int n, m, l;
+for (n = 48; n < 58; n++)
 {
-for (ten = (hundred + 1); ten <= '9'; ten++) /*tens=100s+1*/
+for (m = 49; m < 58; m++)
 {
-for (one = (ten + 1); one <= '9'; one++) /*ones*/
+for (l = 50; l < 58; l++)
 {
-putchar(hundred);
-}
+if (l > m && m > n)
 {
-putchar(ten);
-}
-{
-putchar(one);
-}
-if (hundred != '7' || ten != '8' || one != '9')
+putchar(n);
+putchar(m);
+putchar(l);
+if (n != 55 || m != 56)
 {
 putchar(',');
 putchar(' ');
 }
 }
+}
+}
 putchar('\n');
 return (0);
-}
 }
