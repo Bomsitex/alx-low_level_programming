@@ -9,7 +9,9 @@
 void print_triangle(int var)
 {
 	if (var < 1)
-		_putchar('\n');
+	{
+	_putchar('\n');
+	}
 	else
 	{
 		int size = 1;
