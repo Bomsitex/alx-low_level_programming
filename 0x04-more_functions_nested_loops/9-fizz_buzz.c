@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 /**
-*main - programe that prints either number
-*or fizz or buzz or fizzbuzz
+*main - program that prints either number
+*or fizz or buzz or fizzBuzz
+*
+*
 *Return: returns 0
 */
 
@@ -14,21 +16,21 @@ int main(void)
 	{
 		if ((num % 3 == 0) && (num % 5 == 0))
 		{
-			printf("FIZZYBUZZ ");
+			printf("FizzBuzz ");
 		}
 		else if ((num % 3) == 0)
 		{
-			printf("FIZZ ");
+			printf("Fizz ");
 		}
 		else if ((num % 5) == 0)
 		{
 			if (num != 100)
 			{
-				printf("BUZZ ");
+				printf("Buzz ");
 			}
 			else
 			{
-				printf("BUZZ");
+				printf("Buzz");
 			}
 		}
 		else
