@@ -11,30 +11,20 @@ void print(unsigned int d);
  */
 void print_number(int n)
 {
-	int d = 1, i = 0, ii = 0;
-
 	if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
+		n = n * -1;
 	}
+	print(n);
+}
 
-	while (n / d != 0)
-	{
-		d *= 10;
-		i++;
-	}
-	d = d / 10;
-
-	while (ii < i)
-	{
-		_putchar('0' + n / d);
-		n = n - (n / d) * d;
-		d = d / 10;
-		ii++;
-	}
-
-	if (i == 0)
-		_putchar('0' + n);
-
+/**print - subfunction to print recursively
+ * @d: variable to be printed
+ */
+void print(unsigned int d)
+{
+	if (d / 10)
+		print(d / 10);
+	_putchar('0'  + d % 10);
 }
