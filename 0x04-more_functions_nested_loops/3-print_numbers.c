@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * print_numbers - Prints the number zero to nine
@@ -6,11 +7,13 @@
  */
 void print_numbers(void)
 {
-	int n;
+char num;
 
-	for (n = 48; n < 58; n++)
-	{
-	putchar(n);
-	}
-	putchar(10);
+for (num = '0'; num <= '9'; num++)
+{
+putchar(num);
+}
+putchar('\n');
+
+return;
 }
