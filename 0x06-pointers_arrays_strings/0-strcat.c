@@ -1,13 +1,15 @@
 #include "main.h"
 
 /**
-* _str > this is a funtion strcat
+* _str - this is a funtion strcat
 * @dest: first param
 * @src: second param
 * Return: a string
 */
+
 char *_strcat(char *dest, char *src)
 {
+
 	int index = 0, dest_len = 0;
 
 	while (dest[index++])
