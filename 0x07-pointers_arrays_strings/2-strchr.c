@@ -8,6 +8,13 @@
 */
 char *_strchr(char *s, char c)
 {
-	s = strchr(s, c);
-	return (s);
+	int i = 0;
+
+	while (s[i] != '\0' && s[i] != c) /* find match */
+		i++;
+
+	if (s[i] == c) /* if match, assign to address */
+		return (&s[i]);
+	else
+		return (NULL);
 }
