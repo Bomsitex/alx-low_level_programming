@@ -10,7 +10,7 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	If(array == NULL || action == NULL)
+	if (array == NULL || action == NULL)
 		return;
 	f(name);
 }
