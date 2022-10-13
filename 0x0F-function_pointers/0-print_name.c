@@ -1,5 +1,3 @@
-
-cat > 0-print_name.c
 #include <stdlib.h>
 #include "function_pointers.h"
 
